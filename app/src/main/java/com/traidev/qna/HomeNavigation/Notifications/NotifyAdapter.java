@@ -57,10 +57,6 @@ public class NotifyAdapter extends RecyclerView.Adapter<NotifyAdapter.ViewHolder
         else if(nlist.get(position).getThumbnil().equals("0"))
         { holder.Img.setImageResource(R.drawable.cross);    }
 
-        if(nlist.get(position).getStatus().equals("all"))
-        {
-            holder.nCLose.setVisibility(View.GONE);
-        }
 
         /*holder.nCLose.setOnClickListener(new View.OnClickListener() {
             @Override
