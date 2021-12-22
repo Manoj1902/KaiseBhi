@@ -18,6 +18,23 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            android:text="How satisfied you are"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#222"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Choose one of them"/>
 
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -34,11 +51,14 @@
                 android:layout_margin="10dp"
                 android:id="@+id/em1"
                 android:layout_height="wrap_content">
+
                 <ImageView
                     android:src="@drawable/e1"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
+                    android:layout_height="60dp"/>
+d
                 <TextView
+                    android:visibility="gone"
                     android:textColor="#333"
                     android:textAlignment="center"
                     android:textStyle="bold"
@@ -47,6 +67,7 @@
                     android:text="OK - \u20B92"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -59,8 +80,9 @@
                 <ImageView
                     android:src="@drawable/e2"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
+                    android:layout_height="60dp"/>
                 <TextView
+                    android:visibility="gone"
                     android:textColor="#333"
                     android:textAlignment="center"
                     android:textStyle="bold"
@@ -81,8 +103,9 @@
                 <ImageView
                     android:src="@drawable/e3"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
+                    android:layout_height="60dp"/>
                 <TextView
+                    android:visibility="gone"
                     android:textColor="#333"
                     android:textAlignment="center"
                     android:textStyle="bold"
@@ -102,12 +125,15 @@
                 android:layout_width="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_height="wrap_content">
+
                 <ImageView
                     android:src="@drawable/e4"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
+                    android:layout_height="60dp"/>
+
                 <TextView
                     android:textColor="#333"
+                    android:visibility="gone"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="10dp"
@@ -115,6 +141,7 @@
                     android:text="Best - \u20B910"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
+
             </LinearLayout>
 
 
@@ -130,8 +157,9 @@
                 <ImageView
                     android:src="@drawable/e5"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
+                    android:layout_height="60dp"/>
                 <TextView
+                    android:visibility="gone"
                     android:textColor="#333"
                     android:textAlignment="center"
                     android:textStyle="bold"
@@ -167,7 +195,7 @@
                 android:id="@+id/payBtn"
                 android:layout_marginBottom="10dp"
                 android:layout_marginHorizontal="10dp"
-                android:text="Pay for Hide Answer- \u20B92"
+                android:text="Pay for Hide Answer"
                 android:textStyle="bold"
                 android:backgroundTint="#009688"
                 android:background="@drawable/btn_bg"
