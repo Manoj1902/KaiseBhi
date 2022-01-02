@@ -302,7 +302,7 @@ public class ProfileUpdate extends AppCompatActivity {
                     String data = dr.getMessage();
                     Toast.makeText(getApplicationContext(), data, Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Some error occured!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Some error occurred!", Toast.LENGTH_SHORT).show();
                 }
                 passProgress.setVisibility(View.INVISIBLE);
                 passText.setVisibility(View.VISIBLE);

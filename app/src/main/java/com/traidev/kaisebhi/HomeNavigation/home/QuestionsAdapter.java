@@ -56,9 +56,9 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
 
     }
 
-    @SuppressLint("ResourceType")
+    @SuppressLint({"ResourceType", "SetTextI18n"})
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
         holder.Title.setText(nlist.get(position).getTitle());
         holder.Desc.setText(nlist.get(position).getDesc());
@@ -87,7 +87,7 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_TEXT,
-                        "Hey, Answer this Question on KaiseBhi  & Get Extra Discount | "+nlist.get(position).getTitle()+"\nGet Kaisebhi App at: https://play.google.com/store/apps/details?id=" + context.getPackageName());
+                        "Hey, Answer this Question on KaiseBhi | *"+nlist.get(position).getTitle()+"*\nGet Kaisebhi App at: https://play.google.com/store/apps/details?id=" + context.getPackageName());
 
                 sendIntent.setType("text/plain");
                 context.startActivity(sendIntent);

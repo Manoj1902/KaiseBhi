@@ -55,7 +55,7 @@ public class MineQuestionsAdapter extends RecyclerView.Adapter<MineQuestionsAdap
 
     @SuppressLint("ResourceType")
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
         holder.Title.setText(nlist.get(position).getTitle());
         holder.Desc.setText(nlist.get(position).getDesc());
@@ -69,7 +69,8 @@ public class MineQuestionsAdapter extends RecyclerView.Adapter<MineQuestionsAdap
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_TEXT,
-                        "Hey, Answer this Question on QNA & Get Extra Discount | "+nlist.get(position).getTitle());
+                        "Hey, Answer this Question on KaiseBhi | *"+nlist.get(position).getTitle()+"*\nGet Kaisebhi App at: https://play.google.com/store/apps/details?id=" + context.getPackageName());
+
                 sendIntent.setType("text/plain");
                 context.startActivity(sendIntent);
             }

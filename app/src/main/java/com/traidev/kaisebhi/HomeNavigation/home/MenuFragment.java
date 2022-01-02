@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,7 +53,8 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
         View root = inflater.inflate(R.layout.fragment_navigation, container, false);
 
         sharedPrefManager = new SharedPrefManager(getActivity());
-        TextView m1,m01,m2,m3,m4,m5,m6,m7,m8,m9,m10;
+        TextView m1, m4, m5, m6, m7;
+        RelativeLayout m01, m2, m3, m8, m9, m10;
         ImageView i1;
 
         MainFrame = getActivity().findViewById(R.id.nav_host_fragment);
